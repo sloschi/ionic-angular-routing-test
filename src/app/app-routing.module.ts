@@ -1,19 +1,22 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { ObjectsPage } from "./objects/objects.page";
+import { DashboardPage } from "./dashboard/dashboard.page";
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "dashboard",
+    pathMatch: "full"
+  },
+  { path: "tasks", loadChildren: "./tasks/tasks.module#TasksPageModule" },
+  {
+    path: "objects",
+    loadChildren: "./objects/objects.module#ObjectsPageModule"
   },
   {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: "dashboard",
+    loadChildren: "./dashboard/dashboard.module#DashboardPageModule"
   }
 ];
 
