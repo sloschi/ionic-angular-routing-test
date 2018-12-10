@@ -9,7 +9,7 @@ export class ObjectListComponent implements OnInit {
   public elements: string[] = [];
 
   constructor() {
-    this.elements = ["dfrgdfg", "sdfgdfgrh", "rgergher"];
+    this.elements = ["Object 1", "Object 2", "Object 3"];
   }
 
   ngOnInit() {}

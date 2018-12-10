@@ -9,7 +9,7 @@ export class TaskListComponent implements OnInit {
   elements: string[];
 
   constructor() {
-    this.elements = ["assad", "asdghh", "gfghedrh"];
+    this.elements = ["Task 1", "Task 2", "Task 3"];
   }
 
   ngOnInit() {}
